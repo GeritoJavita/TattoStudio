@@ -1,0 +1,51 @@
+body {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    background-color: #000;
+}
+.navbar, .footer, .card, .modal-content {
+    background-color: #333;
+}
+.nav-link, .navbar-brand, .footer p, .footer a {
+    color: #fff;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.header {
+    background: url('img/logo.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+}
+.header h1, .header p {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 10px 20px;
+}
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+.footer {
+    padding: 20px 0;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-body, .modal-footer {
+    border-top: none;
+}
+.modal-footer {
+    justify-content: center;
+}
+.btn-custom {
+    background-color: #444;
+    border: none;
+    color: #fff;
+}
+.btn-custom:hover {
+    background-color: #555;
+}

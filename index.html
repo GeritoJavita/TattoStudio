@@ -1,47 +1,294 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhetattoo - Estudio de Tatuajes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="navbar-brand" href="#">Jhetattoo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Artista</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categories">Categorías</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-
-    <header>
-
-
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="display-4">Bienvenidos a Jhetattoo</h1>
+                <p class="lead">Arte en la piel por el artista profesional Jhesua Alarcon en Manizales, Caldas</p>
+            </div>
+        </div>
     </header>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
 
-  </body>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Jhetattoo es un estudio de tatuajes independiente ubicado en Manizales, Caldas. Estamos dedicados a crear arte personalizado en la piel. Nuestro equipo de tatuadores profesionales tiene años de experiencia y pasión por lo que hacen.</p>
+                    <p>Utilizamos materiales de alta calidad y técnicas avanzadas para garantizar que cada tatuaje sea una obra de arte única y segura.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/logo.jpg" class="img-fluid" alt="Sobre Nosotros">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Gallery Section with Carousel -->
+    <section id="gallery" class="py-5 bg-light text-dark">
+        <div class="container">
+            <h2 class="text-center">Galería</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/logo.jpg" class="d-block w-100" alt="Tatuaje 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/logo.jpg" class="d-block w-100" alt="Tatuaje 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/logo.jpg" class="d-block w-100" alt="Tatuaje 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Categories Section -->
+    <section id="categories" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center">Categorías</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <img src="img/logo.jpg" class="card-img-top" alt="Antebrazo">
+                        <div class="card-body">
+                            <h3 class="card-title">Antebrazo</h3>
+                            <p class="card-text">Tatuajes en el antebrazo que destacan por su visibilidad y detalle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <img src="img/logo.jpg" class="card-img-top" alt="Espalda">
+                        <div class="card-body">
+                            <h3 class="card-title">Espalda</h3>
+                            <p class="card-text">Amplios diseños en la espalda que permiten una mayor creatividad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <img src="img/logo.jpg" class="card-img-top" alt="Pierna">
+                        <div class="card-body">
+                            <h3 class="card-title">Pierna</h3>
+                            <p class="card-text">Tatuajes en las piernas que complementan el flujo y la forma del cuerpo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with Cards -->
+    <section id="services" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center">Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Diseño Personalizado</h3>
+                            <p class="card-text">Trabajamos contigo para crear un diseño único que se adapte a tu estilo y personalidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Cobertura de Tatuajes</h3>
+                            <p class="card-text">Ofrecemos servicios de cobertura para aquellos tatuajes que deseas renovar o cambiar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Retiro de Tatuajes</h3>
+                            <p class="card-text">Utilizamos tecnología avanzada para el retiro seguro y eficaz de tatuajes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light text-dark">
+        <div class="container">
+            <h2 class="text-center">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">"El mejor estudio de tatuajes en Manizales. Jhesua es un verdadero artista." - Juan P.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">"Una experiencia increíble y un tatuaje que amo. Recomendado al 100%." - María R.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">"Profesionales y amigables. Me encantó el diseño personalizado que hicieron para mí." - Carlos M.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom btn-block">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light text-dark">
+        <div class="container">
+            <h2 class="text-center">Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cuánto cuesta un tatuaje?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            El costo de un tatuaje varía según el tamaño, el diseño y la ubicación en el cuerpo. Te recomendamos visitar nuestro estudio para una consulta personalizada.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Es doloroso hacerse un tatuaje?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            La experiencia del dolor varía de persona a persona y depende de la ubicación del tatuaje. Nuestros tatuadores hacen todo lo posible para que te sientas cómodo durante el proceso.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Qué cuidados debo tener después de hacerme un tatuaje?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Después de hacerte un tatuaje, es importante seguir las instrucciones de cuidado que te proporcionará el tatuador. Esto incluye mantener el área limpia y aplicar ungüento para promover la curación.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Jhetattoo. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
