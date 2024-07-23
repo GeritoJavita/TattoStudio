@@ -7,8 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <!-- Navbar -->
@@ -49,7 +48,7 @@
         <div class="container">
             <div class="header-content">
                 <h1 class="display-4">Bienvenidos a Jhetattoo</h1>
-                <p class="lead">Arte en la piel por el artista profesional Jhesua Alarcon en Manizales, Caldas</p>
+                <p class="lead">Arte en la piel por el artista profesional Jhesua Alarcon</p>
             </div>
         </div>
     </header>
@@ -71,81 +70,151 @@
     </section>
 
     <!-- Gallery Section with Carousel -->
- <!-- Gallery Section with Carousel -->
-<section id="gallery" class="py-5 bg-black text-dark">
-    <div class="container">
-        <h2 class="text-center">Galería</h2>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/galeria1.jpg" class="d-block w-100" alt="Tatuaje 1">
+    <section id="gallery" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center">Galería</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/galeria1.jpg" class="d-block w-100" alt="Tatuaje 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria2.jpg" class="d-block w-100" alt="Tatuaje 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria3.jpg" class="d-block w-100" alt="Tatuaje 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria5.jpg" class="d-block w-100" alt="Tatuaje 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria6.jpg" class="d-block w-100" alt="Tatuaje 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria7.jpg" class="d-block w-100" alt="Tatuaje 6">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/galeria2.jpg" class="d-block w-100" alt="Tatuaje 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/galeria3.jpg" class="d-block w-100" alt="Tatuaje 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/galeria5.jpg" class="d-block w-100" alt="Tatuaje 4">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/galeria6.jpg" class="d-block w-100" alt="Tatuaje 5">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/galeria7.jpg" class="d-block w-100" alt="Tatuaje 6">
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Categories Section -->
     <section id="categories" class="py-5 bg-black">
         <div class="container">
             <h2 class="text-center">Categorías</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-white mb-3">
-                        <img src="img/antebrazo.jpg" class="card-img-top" alt="Antebrazo">
+            <div id="accordionCategories">
+                <!-- Antebrazo Category -->
+                <div class="card bg-dark">
+                    <div class="card-header" id="headingAntebrazo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseAntebrazo" aria-expanded="true" aria-controls="collapseAntebrazo">
+                                Antebrazo
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseAntebrazo" class="collapse show" aria-labelledby="headingAntebrazo" data-parent="#accordionCategories">
                         <div class="card-body">
-                            <h3 class="card-title">Antebrazo</h3>
-                            <p class="card-text">Tatuajes en el antebrazo que destacan por su visibilidad y detalle.</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/antebrazo.jpg" class="card-img-top" alt="Antebrazo">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Diseño 1</h3>
+                                            <p class="card-text">Tatuaje en el antebrazo con diseño 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-white mb-3">
+                                    <img src="img/antebrazo.jpg" class="card-img-top" alt="Antebrazo">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en el antebrazo con diseño 1.</p>
+                                    </div>
+                                </div>
+                                <!-- Añadir más cards aquí -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-white mb-3">
-                        <img src="img/logo.jpg" class="card-img-top" alt="Espalda">
+                <!-- Pecho Category -->
+                <div class="card bg-dark">
+                    <div class="card-header" id="headingPecho">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePecho" aria-expanded="false" aria-controls="collapsePecho">
+                                Pecho
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapsePecho" class="collapse" aria-labelledby="headingPecho" data-parent="#accordionCategories">
                         <div class="card-body">
-                            <h3 class="card-title">Espalda</h3>
-                            <p class="card-text">Amplios diseños en la espalda que permiten una mayor creatividad.</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/pecho.jpg" class="card-img-top" alt="Pecho">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Diseño 1</h3>
+                                            <p class="card-text">Tatuaje en el pecho con diseño 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-white mb-3">
+                                    <img src="img/pecho.jpg" class="card-img-top" alt="Pecho">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en el pecho con diseño 1.</p>
+                                    </div>
+                                </div>
+                                <!-- Añadir más cards aquí -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-white mb-3">
-                        <img src="img/piernas.jpg" class="card-img-top" alt="Pierna">
+                <!-- Pierna Category -->
+                <div class="card bg-dark">
+                    <div class="card-header" id="headingPierna">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePierna" aria-expanded="false" aria-controls="collapsePierna">
+                                Pierna
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapsePierna" class="collapse" aria-labelledby="headingPierna" data-parent="#accordionCategories">
                         <div class="card-body">
-                            <h3 class="card-title">Pierna</h3>
-                            <p class="card-text">Tatuajes en las piernas que complementan el flujo y la forma del cuerpo.</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/piernas.jpg" class="card-img-top" alt="Pierna">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Diseño 1</h3>
+                                            <p class="card-text">Tatuaje en la pierna con diseño 1.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-white mb-3">
+                                    <img src="img/imgportada.jpg" class="card-img-top" alt="Pierna">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en la pierna con diseño 1.</p>
+                                    </div>
+                                </div>
+                                <!-- Añadir más cards aquí -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,62 +222,32 @@
         </div>
     </section>
 
-    <!-- Services Section with Cards -->
-    <section id="services" class="py-5 bg-dark">
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-dark text-white">
         <div class="container">
             <h2 class="text-center">Servicios</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card text-white mb-3">
                         <div class="card-body">
-                            <h3 class="card-title">Diseño Personalizado</h3>
-                            <p class="card-text">Trabajamos contigo para crear un diseño único que se adapte a tu estilo y personalidad.</p>
+                            <h3 class="card-title">Tatuajes Personalizados</h3>
+                            <p class="card-text">Diseñamos tatuajes personalizados para que lleves en tu piel algo único y significativo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card text-white mb-3">
                         <div class="card-body">
-                            <h3 class="card-title">Cobertura de Tatuajes</h3>
-                            <p class="card-text">Ofrecemos servicios de cobertura para aquellos tatuajes que deseas renovar o cambiar.</p>
+                            <h3 class="card-title">Piercings</h3>
+                            <p class="card-text">Ofrecemos servicios de perforaciones con las más estrictas normas de higiene.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card text-white mb-3">
                         <div class="card-body">
-                            <h3 class="card-title">Retiro de Tatuajes</h3>
-                            <p class="card-text">Utilizamos tecnología avanzada para el retiro seguro y eficaz de tatuajes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5 bg-light text-dark">
-        <div class="container">
-            <h2 class="text-center">Testimonios</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <p class="card-text">"El mejor estudio de tatuajes en Manizales. Jhesua es un verdadero artista." - Juan P.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <p class="card-text">"Una experiencia increíble y un tatuaje que amo. Recomendado al 100%." - María R.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <p class="card-text">"Profesionales y amigables. Me encantó el diseño personalizado que hicieron para mí." - Carlos M.</p>
+                            <h3 class="card-title">Asesoría de Diseño</h3>
+                            <p class="card-text">Te asesoramos en la creación de tu diseño para que sea exactamente lo que deseas.</p>
                         </div>
                     </div>
                 </div>
@@ -217,73 +256,93 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-dark">
+    <section id="contact" class="py-5 bg-black text-white">
         <div class="container">
             <h2 class="text-center">Contacto</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Nombre</label>
-                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>Dirección:</h4>
+                    <p>Manizales, Caldas</p>
+                    <h4>Email:</h4>
+                    <p>jhesua.alarcon@example.com</p>
+                    <h4>Teléfono:</h4>
+                    <p>+57 123 456 7890</p>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Síguenos en redes sociales:</h4>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center">Testimonios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial bg-black text-white p-4 mb-4">
+                        <p>"Jhetattoo es el mejor estudio de tatuajes. Profesional y con un gran talento artístico."</p>
+                        <p class="font-weight-bold">- Cliente Satisfecho</p>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                <div class="col-md-6">
+                    <div class="testimonial bg-black text-white p-4 mb-4">
+                        <p>"Estoy encantado con mi nuevo tatuaje. El proceso fue seguro y el resultado increíble."</p>
+                        <p class="font-weight-bold">- Cliente Feliz</p>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-custom btn-block">Enviar</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-5 bg-light text-dark">
+    <section id="faq" class="py-5 bg-black text-white">
         <div class="container">
             <h2 class="text-center">Preguntas Frecuentes</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="card">
+            <div id="accordionFAQ">
+                <div class="card bg-dark">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ¿Cuánto cuesta un tatuaje?
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                        <div class="card-body">
-                            El costo de un tatuaje varía según el tamaño, el diseño y la ubicación en el cuerpo. Te recomendamos visitar nuestro estudio para una consulta personalizada.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 ¿Es doloroso hacerse un tatuaje?
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                         <div class="card-body">
-                            La experiencia del dolor varía de persona a persona y depende de la ubicación del tatuaje. Nuestros tatuadores hacen todo lo posible para que te sientas cómodo durante el proceso.
+                            La experiencia del dolor varía según la persona y la ubicación del tatuaje. Nuestros tatuadores son expertos en hacer que el proceso sea lo más cómodo posible.
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
+                <div class="card bg-dark">
+                    <div class="card-header" id="headingTwo">
                         <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                ¿Qué cuidados debo tener después de hacerme un tatuaje?
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Cuánto tiempo tarda en sanar un tatuaje?
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
                         <div class="card-body">
-                            Después de hacerte un tatuaje, es importante seguir las instrucciones de cuidado que te proporcionará el tatuador. Esto incluye mantener el área limpia y aplicar ungüento para promover la curación.
+                            El tiempo de sanación varía, pero generalmente toma entre 2 a 4 semanas. Durante este tiempo, es importante seguir nuestras recomendaciones de cuidado.
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Qué debo considerar antes de hacerme un tatuaje?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFAQ">
+                        <div class="card-body">
+                            Antes de tatuarte, asegúrate de estar bien descansado y alimentado. Evita consumir alcohol y drogas, y consulta cualquier duda con nuestro equipo.
                         </div>
                     </div>
                 </div>
@@ -292,13 +351,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-black text-center py-4">
-        <div class="container">
+    <footer class="py-4 bg-black text-white">
+        <div class="container text-center">
             <p>&copy; 2024 Jhetattoo. Todos los derechos reservados.</p>
-            <div class="social-icons">
-                <i class="fab fa-facebook" aria-hidden="true"></i>
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <div>
+                <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>

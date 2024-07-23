@@ -23,7 +23,6 @@ body {
 
 /* Carousel Styles */
 .carousel-item img {
-    height: 500px;
     object-fit: cover;
     filter: grayscale(50%);
     transition: filter 0.3s ease;
@@ -35,18 +34,36 @@ body {
 /* Header Styles */
 .header {
     background: url('img/cabecera.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: center; /* Hace que la imagen cubra todo el contenedor */
     color: #ffffff;
-    padding: 200px 0;
+    height: 90vh;
+    padding: 0; /* Elimina el padding para una mejor proporción */
     text-align: center;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    position: relative; /* Necesario para el pseudo-elemento ::before */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
 }
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Añade un overlay oscuro */
+    z-index: 1; /* Asegura que el overlay esté encima de la imagen de fondo */
+}
+
 .header h1, .header p {
-    
+    position: relative; /* Asegura que el texto esté encima del overlay */
+    z-index: 2; /* Asegura que el texto esté encima del overlay */
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* Card Styles */
@@ -60,6 +77,9 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 .card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 300px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Hace que las imágenes se recorten para llenar el espacio */
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 .card img:hover {
@@ -68,6 +88,14 @@ body {
 }
 .card-title, .card-text {
     color: #e6e6e6;
+}
+
+/* Dropdown Styles for Categories */
+.category-dropdown .card {
+    margin-bottom: 1rem;
+}
+.category-dropdown .card img {
+    height: 200px;
 }
 
 /* Social Icons */
@@ -85,6 +113,11 @@ body {
 .footer {
     padding: 20px 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.footer p, .footer a {
+    margin: 0;
 }
 
 /* Modal Styles */
@@ -127,7 +160,6 @@ body {
     padding-bottom: 3rem;
 }
 
-
 .bg-dark {
     background-color: #1a1a1a;
 }
@@ -159,11 +191,11 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+/* Carousel Inner */
 .carousel-inner {
-    position: relative;
-    overflow: hidden;
     width: 100%;
-    height: 1000px; /* Ajusta esta altura según tus necesidades */
+    height: 100vh; /* Ajusta esta altura según tus necesidades */
 }
 
 .carousel-item {
@@ -173,5 +205,4 @@ p {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen para que cubra todo el área */
 }
