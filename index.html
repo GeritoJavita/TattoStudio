@@ -7,7 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <!-- Navbar -->
@@ -47,32 +47,18 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <h1 class="display-4">Bienvenidos a Jhetattoo</h1>
-                <p class="lead">Arte en la piel por el artista profesional Jhesua Alarcon</p>
+                <h1 class="display-4 fade-in">Bienvenidos a Jhetattoo</h1>
+                <p class="lead fade-in">Arte en la piel por el artista profesional Jhesua Alarcon</p>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Sobre Nosotros</h2>
-                    <p>Jhetattoo es un estudio de tatuajes independiente ubicado en Manizales, Caldas. Estamos dedicados a crear arte personalizado en la piel. Nuestro equipo de tatuadores profesionales tiene años de experiencia y pasión por lo que hacen.</p>
-                    <p>Utilizamos materiales de alta calidad y técnicas avanzadas para garantizar que cada tatuaje sea una obra de arte única y segura.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/estudio.jpg" class="img-fluid" alt="Sobre Nosotros">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Gallery Section with Carousel -->
+
+
     <section id="gallery" class="py-5 bg-black text-white">
         <div class="container">
-            <h2 class="text-center">Galería</h2>
+            <h2 class="text-center fade-in">Galería</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -113,33 +99,43 @@
             </div>
         </div>
     </section>
-
-    <!-- Categories Section -->
-    <section id="categories" class="py-5 bg-black">
-        <div class="container">
-            <h2 class="text-center">Categorías</h2>
-            <div id="accordionCategories">
-                <!-- Antebrazo Category -->
-                <div class="card bg-dark">
-                    <div class="card-header" id="headingAntebrazo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseAntebrazo" aria-expanded="true" aria-controls="collapseAntebrazo">
-                                Antebrazo
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseAntebrazo" class="collapse show" aria-labelledby="headingAntebrazo" data-parent="#accordionCategories">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card text-white mb-3">
-                                        <img src="img/antebrazo.jpg" class="card-img-top" alt="Antebrazo">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Diseño 1</h3>
-                                            <p class="card-text">Tatuaje en el antebrazo con diseño 1.</p>
-                                        </div>
-                                    </div>
-                                </div>
+    
+<!-- About Section -->
+<section id="about" class="py-5 bg-black text-light">
+    <div class="container ">
+        <div class="row align-items-center fade-in">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="display-4 fade-in ">Sobre Nosotros</h2>
+                <p class="lead fade-in">Jhetattoo es un estudio de tatuajes independiente ubicado en Manizales, Caldas. Estamos dedicados a crear arte personalizado en la piel. Nuestro equipo de tatuadores profesionales tiene años de experiencia y pasión por lo que hacen.</p>
+                <p class="fade-in">Utilizamos materiales de alta calidad y técnicas avanzadas para garantizar que cada tatuaje sea una obra de arte única y segura.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img-container position-relative">
+                    <img src="img/estudio.jpg" class="img-fluid rounded shadow" alt="Sobre Nosotros">
+                    <div class="overlay position-absolute  bg-dark opacity-50"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Section -->
+<section id="categories" class="py-5 bg-black">
+    <div class="container ">
+        <h2 class="text-center text-white ">Categorías</h2>
+        <div id="accordionCategories">
+            <!-- Antebrazo Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingAntebrazo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseAntebrazo" aria-expanded="true" aria-controls="collapseAntebrazo">
+                            Antebrazo
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseAntebrazo" class="collapse show" aria-labelledby="headingAntebrazo" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="card text-white mb-3">
                                     <img src="img/antebrazo.jpg" class="card-img-top" alt="Antebrazo">
                                     <div class="card-body">
@@ -147,32 +143,25 @@
                                         <p class="card-text">Tatuaje en el antebrazo con diseño 1.</p>
                                     </div>
                                 </div>
-                                <!-- Añadir más cards aquí -->
                             </div>
+                            <!-- Añadir más cards aquí -->
                         </div>
                     </div>
                 </div>
-                <!-- Pecho Category -->
-                <div class="card bg-dark">
-                    <div class="card-header" id="headingPecho">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePecho" aria-expanded="false" aria-controls="collapsePecho">
-                                Pecho
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapsePecho" class="collapse" aria-labelledby="headingPecho" data-parent="#accordionCategories">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card text-white mb-3">
-                                        <img src="img/pecho.jpg" class="card-img-top" alt="Pecho">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Diseño 1</h3>
-                                            <p class="card-text">Tatuaje en el pecho con diseño 1.</p>
-                                        </div>
-                                    </div>
-                                </div>
+            </div>
+            <!-- Pecho Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingPecho">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePecho" aria-expanded="false" aria-controls="collapsePecho">
+                            Pecho
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsePecho" class="collapse" aria-labelledby="headingPecho" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="card text-white mb-3">
                                     <img src="img/pecho.jpg" class="card-img-top" alt="Pecho">
                                     <div class="card-body">
@@ -180,32 +169,25 @@
                                         <p class="card-text">Tatuaje en el pecho con diseño 1.</p>
                                     </div>
                                 </div>
-                                <!-- Añadir más cards aquí -->
                             </div>
+                            <!-- Añadir más cards aquí -->
                         </div>
                     </div>
                 </div>
-                <!-- Pierna Category -->
-                <div class="card bg-dark">
-                    <div class="card-header" id="headingPierna">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePierna" aria-expanded="false" aria-controls="collapsePierna">
-                                Pierna
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapsePierna" class="collapse" aria-labelledby="headingPierna" data-parent="#accordionCategories">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card text-white mb-3">
-                                        <img src="img/piernas.jpg" class="card-img-top" alt="Pierna">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Diseño 1</h3>
-                                            <p class="card-text">Tatuaje en la pierna con diseño 1.</p>
-                                        </div>
-                                    </div>
-                                </div>
+            </div>
+            <!-- Pierna Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingPierna">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapsePierna" aria-expanded="false" aria-controls="collapsePierna">
+                            Pierna
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsePierna" class="collapse" aria-labelledby="headingPierna" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
                                 <div class="card text-white mb-3">
                                     <img src="img/imgportada.jpg" class="card-img-top" alt="Pierna">
                                     <div class="card-body">
@@ -213,14 +195,145 @@
                                         <p class="card-text">Tatuaje en la pierna con diseño 1.</p>
                                     </div>
                                 </div>
-                                <!-- Añadir más cards aquí -->
                             </div>
+                            <!-- Añadir más cards aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Brazo Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingBrazo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseBrazo" aria-expanded="false" aria-controls="collapseBrazo">
+                            Brazo
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseBrazo" class="collapse" aria-labelledby="headingBrazo" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-white mb-3">
+                                    <img src="img/brazo.jpg" class="card-img-top" alt="Brazo">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en el brazo con diseño 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Añadir más cards aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Espalda Category -->
+            <div class="card bg-dark fade-in">
+                <div class="card-header" id="headingEspalda">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseEspalda" aria-expanded="false" aria-controls="collapseEspalda">
+                            Espalda
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseEspalda" class="collapse" aria-labelledby="headingEspalda" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-white mb-3">
+                                    <img src="img/espalda.jpg" class="card-img-top" alt="Espalda">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en la espalda con diseño 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Añadir más cards aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Costillas Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingCostillas">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseCostillas" aria-expanded="false" aria-controls="collapseCostillas">
+                            Costillas
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseCostillas" class="collapse" aria-labelledby="headingCostillas" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-white mb-3">
+                                    <img src="img/costillas.jpg" class="card-img-top" alt="Costillas">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en las costillas con diseño 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Añadir más cards aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mano Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingMano">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseMano" aria-expanded="false" aria-controls="collapseMano">
+                            Mano
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseMano" class="collapse" aria-labelledby="headingMano" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-white mb-3">
+                                    <img src="img/mano.jpg" class="card-img-top" alt="Mano">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en la mano con diseño 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Añadir más cards aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tobillo Category -->
+            <div class="card bg-dark">
+                <div class="card-header" id="headingTobillo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTobillo" aria-expanded="false" aria-controls="collapseTobillo">
+                            Tobillo
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTobillo" class="collapse" aria-labelledby="headingTobillo" data-parent="#accordionCategories">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-white mb-3">
+                                    <img src="img/tobillo.jpg" class="card-img-top" alt="Tobillo">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Diseño 1</h3>
+                                        <p class="card-text">Tatuaje en el tobillo con diseño 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Añadir más cards aquí -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-dark text-white">
@@ -255,29 +368,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-black text-white">
-        <div class="container">
-            <h2 class="text-center">Contacto</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4>Dirección:</h4>
-                    <p>Manizales, Caldas</p>
-                    <h4>Email:</h4>
-                    <p>jhesua.alarcon@example.com</p>
-                    <h4>Teléfono:</h4>
-                    <p>+57 123 456 7890</p>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Síguenos en redes sociales:</h4>
-                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-5 bg-dark text-white">
         <div class="container">
@@ -350,20 +441,33 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-black text-white">
-        <div class="container text-center">
-            <p>&copy; 2024 Jhetattoo. Todos los derechos reservados.</p>
-            <div>
-                <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+    <footer id="contact"class="py-4 bg-black text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h4>Dirección</h4>
+                    <p>Manizales, Caldas</p>
+                    <h4>Email:</h4>
+                    <p>jhesua.alarcon@example.com</p>
+                    <h4>Teléfono</h4>
+                    <p>+57 123 456 7890</p>
+                    <h4>Síguenos en redes sociales</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <script src="js/script.js"></script>
+    
+    
+   
 </html>

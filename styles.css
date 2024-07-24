@@ -34,18 +34,17 @@ body {
 /* Header Styles */
 .header {
     background: url('img/cabecera.jpg') no-repeat center center;
-    background-size: center; /* Hace que la imagen cubra todo el contenedor */
+    background-size: center;
     color: #ffffff;
     height: 90vh;
-    padding: 0; /* Elimina el padding para una mejor proporción */
+    padding: 0;
     text-align: center;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
-    position: relative; /* Necesario para el pseudo-elemento ::before */
+    position: relative;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
+    justify-content: center;
 }
-
 .header::before {
     content: "";
     position: absolute;
@@ -53,13 +52,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Añade un overlay oscuro */
-    z-index: 1; /* Asegura que el overlay esté encima de la imagen de fondo */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
-
 .header h1, .header p {
-    position: relative; /* Asegura que el texto esté encima del overlay */
-    z-index: 2; /* Asegura que el texto esté encima del overlay */
+    position: relative;
+    z-index: 2;
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
@@ -77,9 +75,9 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }
 .card img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 300px; /* Fija la altura de las imágenes */
-    object-fit: cover; /* Hace que las imágenes se recorten para llenar el espacio */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 .card img:hover {
@@ -97,6 +95,8 @@ body {
 .category-dropdown .card img {
     height: 200px;
 }
+/* Estilo inicial para los elementos con efecto de fade-in */
+
 
 /* Social Icons */
 .social-icons img {
@@ -110,14 +110,33 @@ body {
 }
 
 /* Footer Styles */
-.footer {
-    padding: 20px 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+footer {
+    padding: 2rem 0;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
-
-.footer p, .footer a {
-    margin: 0;
+footer h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Aumenta el espacio entre los íconos */
+    margin-top: 1rem;
+}
+footer .social-icons a {
+    color: #e6e6e6;
+    transition: color 0.3s ease;
+}
+footer .social-icons a:hover {
+    color: #f0f0f0;
 }
 
 /* Modal Styles */
@@ -195,7 +214,7 @@ p {
 /* Carousel Inner */
 .carousel-inner {
     width: 100%;
-    height: 100vh; /* Ajusta esta altura según tus necesidades */
+    height: 100vh; /* Adjust this height as needed */
 }
 
 .carousel-item {
