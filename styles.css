@@ -96,7 +96,16 @@ body {
     height: 200px;
 }
 /* Estilo inicial para los elementos con efecto de fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* Social Icons */
 .social-icons img {
