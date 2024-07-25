@@ -550,3 +550,101 @@ footer .small {
         height: 4.4rem; /* Vuelve al tamaño inicial */
     }
 }
+/* FAQ Section Styles */
+#faq {
+    background-color: #1a1a1a; /* Fondo oscuro para la sección */
+    color: #e6e6e6; /* Texto claro para contraste */
+    padding: 4rem 2rem; /* Espaciado superior e inferior */
+    display: flex; /* Usa Flexbox para alinear los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor flex */
+    gap: 2rem; /* Espacio entre el contenido y la imagen */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+}
+
+#faq .container {
+    align-items: center;
+    display: flex; /* Usa Flexbox para alinear los elementos dentro del contenedor */
+    flex: 1;
+    gap: 2rem; /* Espacio entre el contenido y la imagen */
+}
+
+#faq .faq-content {
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+    max-width: 70%; /* Limita el ancho máximo del contenido */
+}
+
+#faq h2 {
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    font-family: 'Cinzel', serif; /* Fuente profesional */
+    font-weight: bold; /* Negrita para el título */
+    text-transform: uppercase; /* Texto en mayúsculas para un toque profesional */
+    letter-spacing: 0.1em; /* Espaciado entre letras */
+}
+
+#accordionFAQ .card {
+    border: none; /* Sin bordes */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Espacio entre tarjetas */
+    background-color: #2c2c2c; /* Fondo oscuro para las tarjetas */
+    transition: background-color 0.3s ease; /* Transición suave en el fondo */
+}
+
+#accordionFAQ .card:hover {
+    background-color: #333; /* Fondo oscuro al pasar el ratón */
+}
+
+#accordionFAQ .card-header {
+    background-color: #1a1a1a; /* Fondo para el encabezado */
+    border: none; /* Sin bordes en el encabezado */
+    padding: 1rem; /* Relleno del encabezado */
+}
+
+#accordionFAQ .card-header h2 {
+    margin: 0; /* Eliminar margen por defecto */
+    
+}
+
+#accordionFAQ .btn-link {
+    font-size: 1.2rem; /* Tamaño de fuente más grande para los botones */
+    color: #e6e6e6; /* Color del texto del botón */
+    font-weight: bold; /* Negrita para el texto del botón */
+    text-decoration: none; /* Eliminar subrayado */
+    text-align: left; /* Alinear texto a la izquierda */
+    width: 100%; /* Hacer que el botón ocupe todo el ancho del encabezado */
+    padding: 0.75rem 1rem; /* Relleno del botón */
+    border: none; /* Sin bordes */
+    background: none; /* Sin fondo para el botón */
+    transition: color 0.3s, background-color 0.3s; /* Transición suave */
+}
+
+#accordionFAQ .btn-link:hover,
+#accordionFAQ .btn-link:focus {
+    color: #f0f0f0; /* Color del texto en hover y focus */
+    background-color: #333; /* Fondo en hover y focus */
+}
+
+#accordionFAQ .card-body {
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 1rem; /* Relleno del cuerpo de la tarjeta */
+    background-color: #1a1a1a; /* Fondo del cuerpo de la tarjeta */
+    margin: 0; /* Eliminar margen en los párrafos */
+    font-family: 'Lora', serif; /* Fuente más suave para el contenido */
+    font-size: 20px; /* Tamaño de fuente más pequeño para mejor legibilidad */
+}
+
+.faq-image {
+    flex: 0 0 30%; /* Ocupa el 30% del ancho en pantallas grandes */
+    max-width: 30%; /* Limita el ancho máximo de la imagen */
+    display: flex; /* Usa Flexbox para centrar la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.faq-image img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 0.5rem; /* Bordes redondeados en la imagen */
+}
