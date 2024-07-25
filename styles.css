@@ -101,8 +101,8 @@ img {
     background: url('img/cabecera.jpg') no-repeat center center;
     background-size: cover;
     color: #ffffff;
-    height: 90vh;
-    padding: 0;
+    height: 92vh;
+    padding: 00;
     text-align: center;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
     position: relative;
@@ -501,8 +501,8 @@ footer .small {
 }
 
 .go-top-button {
-    width: 50%; /* Ajustado al 100% del contenedor */
-    height: 50%; /* Ajustado al 100% del contenedor */
+    width: 40%; /* Ajustado al 100% del contenedor */
+    height: 40%; /* Ajustado al 100% del contenedor */
     background-color: #424242;
     border-radius: 50%;
     cursor: pointer;
