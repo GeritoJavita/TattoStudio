@@ -613,7 +613,7 @@ footer .small {
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 0.5rem; /* Bordes redondeados en la imagen */
 }
-@media (max-width: 650px) {
+@media (max-width: 760px) {
     #faq {
         padding: 2rem 1rem;
     }
