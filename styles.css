@@ -394,41 +394,6 @@ footer .small {
 }
 
 /* Estilos del slider de testimonios */
-#testimonials {
-    background-color: #0d0d0d;
-    color: #fff;
-    padding: 3rem 0;
-    text-align: center;
-}
-
-#testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-#testimonials .carousel-item {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#testimonials blockquote {
-    font-size: 1.25rem;
-    font-style: italic;
-    margin: 1.5rem 0;
-}
-
-#testimonials img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-#testimonials footer {
-    font-size: 1rem;
-    font-weight: 700;
-}
 
 /* Estilos para la sección de servicios */
 #services {
