@@ -98,7 +98,7 @@ img {
 
 /* Header Styles */
 .header {
-    background: url('/img/cabecera.jpg') no-repeat center center;
+    background: url('img/cabecera.jpg') no-repeat center center;
     background-size: cover;
     color: #ffffff;
     height: 92vh;
